@@ -11,7 +11,6 @@ img {
 /* Header */
 header[role="banner"] {
   border-bottom: 1px solid var(--color-primary);
-  max-width: 112rem;
   text-align: center;
 }
 header[role="banner"] nav ul {
