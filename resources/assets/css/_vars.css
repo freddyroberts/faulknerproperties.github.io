@@ -1,0 +1,27 @@
+:root {
+    --color-initial: #fff;
+    --color-primary: #0C92B0;
+    --color-secondary: #606c76;
+    --color-tertiary: #f4f5f6;
+    --color-quaternary: #d1d1d1;
+
+    --primaryFont: 'Helvetica', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+
+    --primary-icon: {
+        content: "\f0c8";
+        font-family: 'Fontawesome';
+        font-size: 1.6rem;
+    }
+}
+
+/* Selectors */
+@custom-selector :--headers h1,h2,h3,h4,h5;
+@custom-selector :--buttons button, a.button;
+
+/* Breakpoints */
+@custom-media --view-large ( width >= 1400px);
+@custom-media --view-desktop ( width >= 1056px);
+@custom-media --view-medium ( width >= 960px);
+@custom-media --view-tablet ( width >= 768px);
+@custom-media --view-small ( width >= 599px);

@@ -1,0 +1,86 @@
+/**
+ * Main
+ */
+.row {
+  padding: 2rem;
+}
+/* Mobile First */
+img {
+  width: 100%;
+}
+/* Header */
+header[role="banner"] {
+  border-bottom: 1px solid var(--color-primary);
+  max-width: 112rem;
+  text-align: center;
+}
+header[role="banner"] nav ul {
+  list-style: none;
+}
+@media (min-width: 40rem) {
+  .row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 50rem) {
+  .row {
+    flex-direction: row;
+  }
+  header[role="banner"] h1 {
+    margin: 0;
+    line-height: 4rem;
+    text-align: left;
+  }
+  header[role="banner"] .contact-links {
+    margin: 0;
+    line-height: 4rem;
+    text-align: right;
+  }
+  .contact-links li {
+    margin: 0;
+  }
+}
+.contact-links {
+  margin: 0;
+}
+.contact-links li {
+  display: inline-block;
+}
+.contact-links a {
+  padding: 1rem;
+}
+nav ul li a::before {
+  content: '';
+	@apply --primary-icon;
+	padding: 1rem;
+}
+nav ul li a[href*="tel:"]:before {
+    content: '\f098';
+}
+nav ul li a[href*="mailto:"]:before {
+    content: '\f0e0';
+}
+nav ul li a[href*="#properties"]:before{
+	content: '\f015';
+}
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 3rem;
+}
+footer ul {
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0;
+}
+footer nav ul li a {
+  color: var(--color-initial);
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+footer nav ul li a::before {
+  font-size: 1.4rem;
+}
