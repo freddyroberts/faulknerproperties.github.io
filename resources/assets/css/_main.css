@@ -12,7 +12,7 @@ img {
 header[role="banner"] {
   border-bottom: 1px solid var(--color-primary);
   text-align: center;
-  
+
 }
 header[role="banner"] nav ul {
   list-style: none;
@@ -63,6 +63,7 @@ nav ul li a[href*="mailto:"]:before {
 nav ul li a[href*="#properties"]:before{
 	content: '\f015';
 }
+
 /* Footer */
 footer {
   background-color: var(--color-primary);
