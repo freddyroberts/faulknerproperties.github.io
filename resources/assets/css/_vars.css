@@ -10,8 +10,10 @@
 
     --primary-icon: {
         content: "\f0c8";
+        color: var(--color-primary);
         font-family: 'Fontawesome';
         font-size: 1.6rem;
+        padding: 1rem;
     }
 }
 
@@ -23,5 +25,5 @@
 @custom-media --view-large ( width >= 1400px);
 @custom-media --view-desktop ( width >= 1056px);
 @custom-media --view-medium ( width >= 960px);
-@custom-media --view-tablet ( width >= 768px);
+@custom-media --view-tablet ( width <= 799px);
 @custom-media --view-small ( width >= 599px);

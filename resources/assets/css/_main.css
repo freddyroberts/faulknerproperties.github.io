@@ -1,12 +1,33 @@
 /**
  * Main
  */
+ body {
+   background: rgba(238, 238, 238, 0.35);
+ }
 .row {
   padding: 2rem;
+}
+.card {
+  background: #fff;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.5);
+  padding: 1.5rem;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
 }
 /* Mobile First */
 img {
   width: 100%;
+}
+@media (--view-tablet) {
+  .row .column.column-60 {
+      max-width: 100%;
+  }
+  .row .column.column-50 {
+      max-width: 100%;
+  }
+}
+:--headers {
+  color: var(--color-primary);
 }
 /* Header */
 header[role="banner"] {
@@ -63,7 +84,63 @@ nav ul li a[href*="mailto:"]:before {
 nav ul li a[href*="#properties"]:before{
 	content: '\f015';
 }
-
+.intro ul {
+  list-style: none;
+}
+.near ul {
+  list-style: none;
+}
+.location:before {
+  @apply --primary-icon;
+  content: "\f041";
+}
+.dollar:before {
+  @apply --primary-icon;
+  content: "\f155";
+}
+.house:before {
+  @apply --primary-icon;
+  content: "\f015";
+}
+.bedroom:before {
+  @apply --primary-icon;
+  content: "\f236";
+}
+.bathroom:before {
+  @apply --primary-icon;
+  content: "\f043";
+}
+.schools:before {
+  @apply --primary-icon;
+  content: '\f19d';
+}
+.hospital:before {
+  @apply --primary-icon;
+  content: '\f0f8';
+}
+.grocery:before {
+  @apply --primary-icon;
+  content: '\f07a';
+}
+.restaurant:before {
+  @apply --primary-icon;
+  content: '\f0f5';
+}
+.shops:before {
+  @apply --primary-icon;
+  content: '\f005';
+}
+.whatsnew ul {
+  columns: 2;
+}
+@media (--view-tablet) {
+  .whatsnew ul {
+    columns: 2;
+  }
+}
+#properties h3.house::before {
+  font-size: inherit;
+}
 /* Footer */
 footer {
   background-color: var(--color-primary);
