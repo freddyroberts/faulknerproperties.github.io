@@ -84,6 +84,9 @@ nav ul li a[href*="mailto:"]:before {
 nav ul li a[href*="#properties"]:before{
 	content: '\f015';
 }
+.gallery {
+  margin-bottom: 1.5rem;
+}
 .intro ul {
   list-style: none;
 }
@@ -137,9 +140,6 @@ nav ul li a[href*="#properties"]:before{
   .whatsnew ul {
     columns: 1;
   }
-}
-.gallery h3 {
-  text-align: center;
 }
 #properties h3.house::before {
   font-size: inherit;
