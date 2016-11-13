@@ -138,6 +138,9 @@ nav ul li a[href*="#properties"]:before{
     columns: 2;
   }
 }
+.gallery h3 {
+  text-align: center;
+}
 #properties h3.house::before {
   font-size: inherit;
 }
