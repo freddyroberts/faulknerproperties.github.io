@@ -133,9 +133,9 @@ nav ul li a[href*="#properties"]:before{
 .whatsnew ul {
   columns: 2;
 }
-@media (--view-tablet) {
+@media (--view-small) {
   .whatsnew ul {
-    columns: 2;
+    columns: 1;
   }
 }
 .gallery h3 {

@@ -26,4 +26,4 @@
 @custom-media --view-desktop ( width >= 1056px);
 @custom-media --view-medium ( width >= 960px);
 @custom-media --view-tablet ( width <= 799px);
-@custom-media --view-small ( width >= 599px);
+@custom-media --view-small ( width <= 599px);
