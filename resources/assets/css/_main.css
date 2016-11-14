@@ -141,6 +141,19 @@ nav ul li a[href*="#properties"]:before{
     columns: 1;
   }
 }
+.financing ul {
+  list-style: none;
+  display: inline-block;
+}
+.financing ul li {
+  display: inline-block;
+}
+.financing img {
+  max-width: 100%;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
 #properties h3.house::before {
   font-size: inherit;
 }
